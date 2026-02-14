@@ -84,10 +84,11 @@ List the key features of your project:
 #### Screenshots (Add at least 3)
 
 ![[Screenshot1](https://drive.google.com/file/d/1387kCticlnWRwPRr2zazhgDzoedTxQp1/view?usp=drivesdk)](hand detection)
-*Add caption explaining what this shows*
+*This is how the hand is detected by using webcam*
 
 ![[Screenshot2](https://drive.google.com/file/d/19pbt9wIombIojhHRAHryi7FmEEs9lfYE/view?usp=drivesdk)](Right click)
-*Add caption explaining what this shows*
+*The right-click gesture enables users to perform the mouse right-click action using hand movements. When the system detects a specific finger position pattern, it interprets the gesture and triggers the right mouse button automatically. This allows users to open context menus and perform secondary actions without using a physical mouse.
+*
 
 ![Screenshot3](Add screenshot 3 here with proper name)
 *Add caption explaining what this shows*
