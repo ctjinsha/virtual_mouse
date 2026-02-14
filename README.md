@@ -161,7 +161,15 @@ Output	Win32/X11 Event	pyautogui.click()*
 **Application Workflow:**
 
 ![Workflow](docs/workflow.png)
-*Add caption explaining your workflow*
+*Initialization & Ingestion: The process begins by initializing the software environment (OpenCV, MediaPipe) and capturing live frames from the webcam.
+
+The Detection Gate: This is a critical decision point. The system uses a hand-tracking model to scan the frame. If no hand is detected, it enters a "No" loop, discarding the current frame and moving to the next to optimize processing.
+
+Data Conversion (Landmarks): Once a hand is confirmed, the system extracts 21 key landmarks. This stage effectively translates a physical hand into a mathematical coordinate system (x,y,z points).
+
+Gesture Recognition Logic: The system interprets the landmarks. It calculates spatial relationships—such as the distance between the index and thumb—to determine if the user is performing a specific "gesture" rather than just moving their hand.
+
+Execution & Loop: The recognized gesture is mapped to a system command (like a Left Click). After the action is executed, the system checks for an exit signal. If none is found, it loops back to the webcam capture to process the next millisecond of movement.*
 
 ---
 
