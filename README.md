@@ -499,11 +499,11 @@ Because webcam resolutions (often 640x480) differ from screen resolutions (e.g.,
 
 If you used AI tools during development, document them here for transparency:
 
-**Tool Used:** [e.g., GitHub Copilot, v0.dev, Cursor, ChatGPT, Claude]
+**Tool Used:** [ChatGPT,Gemini]
 
 **Purpose:** [What you used it for]
-- Example: "Generated boilerplate React components"
-- Example: "Debugging assistance for async functions"
+-ChatGPT : "For error detection and Syntax"
+-Gemini: "flow chart"
 - Example: "Code review and optimization suggestions"
 
 **Key Prompts Used:**
@@ -511,7 +511,7 @@ If you used AI tools during development, document them here for transparency:
 - "Debug this async function that's causing race conditions"
 - "Optimize this database query for better performance"
 
-**Percentage of AI-generated code:** [Approximately X%]
+**Percentage of AI-generated code:** [10%]
 
 **Human Contributions:**
 - Architecture design and planning
@@ -525,8 +525,8 @@ If you used AI tools during development, document them here for transparency:
 
 ## Team Contributions
 
-- [Name 1]: [Specific contributions - e.g., Frontend development, API integration, etc.]
-- [Name 2]: [Specific contributions - e.g., Backend development, Database design, etc.]
+- [Farhana Sherin E]: [openCv,Flow chart,Architecture,pyautogui]
+- [Jinsha Mol C T]: [Mediapipe,README.md,main function]
 - [Name 3]: [Specific contributions - e.g., UI/UX design, Testing, Documentation, etc.]
 
 ---
