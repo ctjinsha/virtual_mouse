@@ -83,7 +83,7 @@ List the key features of your project:
 
 #### Screenshots (Add at least 3)
 
-![Screenshot1](Add screenshot 1 here with proper name)
+![[Screenshot1](https://drive.google.com/file/d/1387kCticlnWRwPRr2zazhgDzoedTxQp1/view?usp=drivesdk)](hand detection)
 *Add caption explaining what this shows*
 
 ![Screenshot2](Add screenshot 2 here with proper name)
