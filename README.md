@@ -90,7 +90,16 @@ List the key features of your project:
 *The right-click gesture enables users to perform the mouse right-click action using hand movements. When the system detects a specific finger position pattern, it interprets the gesture and triggers the right mouse button automatically. This allows users to open context menus and perform secondary actions without using a physical mouse.
 *
 
-![Screenshot3](Add screenshot 3 here with proper name)
+![[Screenshot3](https://drive.google.com/file/d/1qchDCGgpgiIhKfGN8t8y4rFHtgWXwy7C/view?usp=drivesdk)](Left click)
+*Add caption explaining what this shows*
+
+![[Screenshot4](https://drive.google.com/file/d/1KyGUM0HSbe2YxTyxten4tJQmFiQVz6zd/view?usp=drivesdk))](ScreenShot taken)
+*Add caption explaining what this shows*
+
+![[Screenshot5](https://drive.google.com/file/d/1WQ4ZHJTw4JFtpzIAajsq7ihaHCkKI1Va/view?usp=drivesdk))](Double click)
+*Add caption explaining what this shows*
+
+![[Screenshot6](https://drive.google.com/file/d/1FDxPs8pHTwq2RXiYr2HOetOwRxTLWA4L/view?usp=drivesdk))](Cursor move)
 *Add caption explaining what this shows*
 
 #### Diagrams
@@ -160,7 +169,8 @@ Output	Win32/X11 Event	pyautogui.click()*
 
 **Application Workflow:**
 
-![Workflow](docs/workflow.png)
+![Workflow](![WhatsApp Image 2026-02-14 at 8 44 30 AM](https://github.com/user-attachments/assets/9aa63a6b-d7dd-4b02-adee-b4b9c2d1024e)
+)
 *Initialization & Ingestion: The process begins by initializing the software environment (OpenCV, MediaPipe) and capturing live frames from the webcam.
 
 The Detection Gate: This is a critical decision point. The system uses a hand-tracking model to scan the frame. If no hand is detected, it enters a "No" loop, discarding the current frame and moving to the next to optimize processing.
