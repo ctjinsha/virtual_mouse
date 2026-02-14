@@ -6,23 +6,23 @@
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: [Syntax Squad]
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: [Farhana Sherin E] - [NSS College Of Engineering Palakkad]
+- Member 2: [Jinsha Mol C T] - [NSS College Of Engineering Palakkad]
 
 ### Hosted Project Link
 [mention your project hosted link here]
 
 ### Project Description
-[2-3 lines about what your project does]
+[A computer vision-based mouse control system that enables users to interact with computers using hand movements. The project detects hand landmarks, calculates angles and distances between fingers, and converts gestures into system commands for touchless interaction.]
 
 ### The Problem statement
-[What problem are you solving?]
+[Physical interaction with devices can be inconvenient, unhygienic, and inaccessible in certain environments like hospitals, public kiosks, and presentations. Traditional input devices such as keyboards and mice also limit natural human-computer interaction.]
 
 ### The Solution
-[How are you solving it?]
+[The system uses computer vision and machine learning techniques to detect hand gestures using a webcam. It calculates angles and distances between hand landmarks and maps gestures to computer control actions, enabling hands-free device operation.]
 
 ---
 
@@ -31,10 +31,10 @@
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
+- Languages used: [Python]
+- Frameworks used: OpenCV-based vision pipeline]
+- Libraries used: [OpenCV,MediaPipe(for hand landmark detection),Numpy,PyAutoGUI,pynput]
+- Tools used: [VS Code,Git,GitHub,Webcam]
 
 **For Hardware:**
 - Main components: [List main components]
@@ -46,10 +46,10 @@
 ## Features
 
 List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
+- Real-time hand tracking: [Detects hand landmarks using computer vision]
+- Gesture Recognition: [Identifies gestures using angle and distance calculation.]
+- Touchless Interaction: [Enables hands-free system control-Cursor move,Left Click,Right Click,Double Click,ScreenShot]
+- Lightweight & Low Cost: [Works using a standard webcam]
 
 ---
 
@@ -59,12 +59,12 @@ List the key features of your project:
 
 #### Installation
 ```bash
-[Installation commands - e.g., npm install, pip install -r requirements.txt]
+[pip install opencv-python mediapipe pyautogui numpy pynput]
 ```
 
 #### Run
 ```bash
-[Run commands - e.g., npm start, python app.py]
+[python main.py]
 ```
 
 ### For Hardware:
