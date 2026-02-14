@@ -2,7 +2,7 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# [VIRTUAL MOUSE] 🎯
 
 ## Basic Details
 
@@ -86,7 +86,7 @@ List the key features of your project:
 ![[Screenshot1](https://drive.google.com/file/d/1387kCticlnWRwPRr2zazhgDzoedTxQp1/view?usp=drivesdk)](hand detection)
 *Add caption explaining what this shows*
 
-![Screenshot2](Add screenshot 2 here with proper name)
+![[Screenshot2](https://drive.google.com/file/d/19pbt9wIombIojhHRAHryi7FmEEs9lfYE/view?usp=drivesdk)](Right click)
 *Add caption explaining what this shows*
 
 ![Screenshot3](Add screenshot 3 here with proper name)
@@ -96,7 +96,9 @@ List the key features of your project:
 
 **System Architecture:**
 
-![Architecture Diagram](docs/architecture.png)
+![Architecture Diagram](![WhatsApp Image 2026-02-14 at 8 26 30 AM](https://github.com/user-attachments/assets/453ce2e7-d35c-4fbb-9766-f66eabccde8b)
+
+)
 *Explain your system architecture - components, data flow, tech stack interaction*
 
 **Application Workflow:**
