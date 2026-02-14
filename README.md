@@ -100,7 +100,63 @@ List the key features of your project:
 ![Architecture Diagram](![WhatsApp Image 2026-02-14 at 8 26 30 AM](https://github.com/user-attachments/assets/453ce2e7-d35c-4fbb-9766-f66eabccde8b)
 
 )
-*Explain your system architecture - components, data flow, tech stack interaction*
+*1. System Components & Layers
+
+The architecture is divided into three logical tiers:
+A. Perception Layer (Data Ingestion)
+
+    Webcam Module: Captures the video stream. This is the "eye" of the system.
+
+    Preprocessing Unit: Standardizes the frame.
+
+        Flipping: Since webcams are usually front-facing, we mirror the image so that moving your hand to the left moves the cursor to the left.
+
+        Color Conversion: Changes BGR (OpenCV default) to RGB (MediaPipe/AI default).
+
+B. Intelligence Layer (The "Brain")
+
+    Hand Tracking Engine: Uses a pre-trained ML model (like MediaPipe) to identify 21 3D landmarks (joints).
+
+    Coordinate Translator: Maps the 2D coordinates from the webcam resolution (e.g., 640x480) to the user's screen resolution (e.g., 1920x1080).
+
+    Heuristic Logic Engine: This is where the "Rules" live.
+
+        Rule 1: If Index and Middle fingers are close → Left Click.
+
+        Rule 2: If Index is up and Middle is down → Mouse Move.
+
+C. Execution Layer (System Integration)
+
+    Command Mapper: Translates the logic result into a specific function call.
+
+    OS Driver Interface: Uses system libraries to inject mouse/keyboard events directly into the Operating System's event queue.
+
+2. Data Flow (The "Journey of a Click")
+
+    Stream: The webcam sends a Raw Frame Matrix to the Python environment.
+
+    Detection: The ML model outputs a List of Coordinates (x,y,z for 21 points).
+
+    Calculation: The system calculates the Euclidean Distance between point 8 (Index Tip) and point 12 (Middle Tip).
+    d=(x2​−x1​)2+(y2​−y1​)2​
+
+    Decision: If d<threshold, a "Click" signal is generated.
+
+    Interrupt: The OS receives a virtual click event at the current x,y position.
+
+3. Tech Stack Interaction
+Component	Technology	Role
+Language	Python	The glue that connects all modules.
+Computer Vision	OpenCV	Handles video capture, frame flipping, and UI overlays.
+Machine Learning	MediaPipe	High-speed hand landmark detection (uses On-Device ML).
+Math Engine	NumPy / Math	Performs vector calculations for finger distances/angles.
+OS Automation	PyAutoGUI / pynput	Controls the hardware mouse and keyboard via software.
+Summary Table
+Step	Data Form	Process
+Input	Pixels (RGB)	cv2.VideoCapture()
+Processing	Landmarks (X, Y)	mp.hands.Hands()
+Logic	Boolean (True/False)	Distance Thresholding
+Output	Win32/X11 Event	pyautogui.click()*
 
 **Application Workflow:**
 
